@@ -10,21 +10,29 @@ nav {
   right: 0px;
 }
 
+nav li {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: middle;
+}
+
 nav a:link {
   color: #3a3a3a;
   font-size: 12px;
   text-decoration: none;
+  vertical-align: middle;
 }
 
-nav li {
-  display: inline-block;
-  padding: 10px;
-  vertical-align: text-top;
+nav a:hover {
+  text-decoration: underline;
 }
-nav img {
-  height: auto;
-  width: 20px;
+
+nav .user_pic {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
 }
+
 /* main-content */
 .main-content {
   display: block;
@@ -44,7 +52,18 @@ input {
   width: 500px;
   height: 30px;
   border: 1px solid;
+  border-color: lightgray;
+}
+input:hover {
+  border: 1px solid;
+  border-color: grey;
+  outline: none;
+}
+
+input:focus {
+  border: 1px solid;
   border-color: #4D90FE;
+  outline: none;
 }
 
 .main-content .btn-container {
@@ -56,9 +75,17 @@ input {
   font-size: 13px;
   color: grey;
   background-color: #f7f7f7;
-  border: 1px;
-  padding: 14px;
+  border: 1px solid;
+  border-color: #f7f7f7;
+  padding: 12px;
   font-weight: bold;
+  border-radius: 3%
+}
+
+.main-content button:hover{
+  color: black;
+  border: 1px solid;
+  border-color: lightgray;
 }
 
 /* footer */
@@ -83,16 +110,21 @@ footer a:link {
   color: grey;
   margin-right: 5px;
   margin-left: 5px;
+  padding: 0px 5px 0px 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 footer .align-left {
   text-align: left;
   float: left;
-  padding-left: 15px;
+  padding-left: 10px;
 }
 
 footer .align-right {
   text-align: right;
   float: right;
-  padding-right: 15px;
+  padding-right: 10px;
 }
 /* helper classes */
